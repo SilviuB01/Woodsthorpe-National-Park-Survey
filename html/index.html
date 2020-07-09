@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>WNP Survey</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+        <link rel="manifest" href="/icons/site.webmanifest">
+        <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/icons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="/icons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap" rel="stylesheet">
+        <meta name="description" content="Woodsthorpe National Park Survey">
+        <meta name="keywords" content="woodsthorpe, park, forest, trees, survey">
+        <meta name="author" content="SilviuB">
+    </head>
+
+    <body>
+        <header>
+            <h1 id="title">Woodsthorpe National Park Survey</h1>
+            <p id="description">We hope you loved your time in nature.</p>
+            <p id="description">You can tell us more in this survey, and you'll help us improve too!</p>
+        </header>
+
+        <form id="survey-form">
+            <div id="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Your name here" required>
+            </div>
+
+            <div id="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Your email here" required>
+            </div>
+
+            <div id="form-group">
+                <label id="number-label" for="number">Age (optional)</label>
+                <input type="number" name="age" id="number" placeholder="Your age here" min="18" max="99">
+            </div>
+
+            <div id="form-group">
+                <label id="dropdown" for="camp-location" required>Please select the location you camped:</label>
+                <select name="camp-location" id="dropdown">
+                    <option disabled selected value>Camping location</option>
+                    <option value="hornPeak">Horn Peak</option>
+                    <option value="cascades">Cascades</option>
+                    <option value="woodRanch">Wood Ranch</option>
+                    <option value="mossGrove">Moss Grove</option>
+                </select>
+            </div>
+            
+            <div class="stars">
+                <p>How would you rate your camping experience?</p>
+                <input id="star-5" type="radio" name="star">
+                <label for="star-5"></label>
+                <input id="star-4" type="radio" name="star">
+                <label for="star-4"></label>
+                <input id="star-3" type="radio" name="star">
+                <label for="star-3"></label>
+                <input id="star-2" type="radio" name="star">
+                <label for="star-2"></label>
+                <input id="star-1" type="radio" name="star">
+                <label for="star-1"></label>
+            </div>
+
+            <div id="form-group">
+                <p>Would you recommend Woodsthorpe National Park to a friend?</p>
+                <label>
+                    <input type="radio" name="recommend" value="absolutely" checked>
+                    Absolutely
+                </label>
+                <label>
+                    <input type="radio" name="recommend" value="maybe">
+                    Maybe
+                </label>
+                <label>
+                    <input type="radio" name="recommend" value="notSure">
+                    Not sure
+                </label>
+            </div>
+
+            <div id="form-group">
+                <p>What do you think we should focus on improving next?</p>
+                <label>
+                    <input type="checkbox" name="improve" value="gps">
+                    Phone and GPS connection
+                </label>
+                <label>
+                    <input type="checkbox" name="improve" value="access">
+                    Car access
+                </label>
+                <label>
+                    <input type="checkbox" name="improve" value="caravan">
+                    Caravan parking
+                </label>
+                <label>
+                    <input type="checkbox" name="improve" value="amenities">
+                    On-site amenities
+                </label>
+                <label>
+                    <input type="checkbox" name="improve" value="amps">
+                    Higher amperage circuits
+                </label>
+                <label>
+                    <input type="checkbox" name="improve" value="disposal">
+                    Larger disposal facilities
+                </label>
+                <label>
+                    <input type="checkbox" name="improve" value="map">
+                    Include good old-fashion paper maps besides our phone app.
+                </label>
+            </div>
+
+            <div id="form-group">
+                <p>Do you have any other comments or suggestions?</p>
+                <textarea name="comments" placeholder="Please enter your comment here..."></textarea>
+            </div>
+
+            <div id="form-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
